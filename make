@@ -18,7 +18,7 @@ perl -pi -e 's/<h1>/<br><h1>/g' index.html
 open "index.html"
 
 # first compile the markdown into a HTML file
-octodown short.md -r > short.html
+octodown long.md -r > short.html
 
 # fix header and favicon
 perl -pi -e 's/Octodown Preview/cryptoparty/g' short.html
