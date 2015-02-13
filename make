@@ -31,3 +31,6 @@ perl -pi -e 's/<h1>/<br><h1>/g' short.html
 
 # open in browser
 open "short.html"
+
+# fix all relative links
+perl -pi -e 's/\/Users\/sigbhu\/code\/cryptoparty/./g' index.html
