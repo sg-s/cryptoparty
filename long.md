@@ -1,6 +1,3 @@
------BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA512
-
 # cryptoparty
 
 ![](assets/banner.jpg)
@@ -46,7 +43,6 @@ Hash: SHA512
   - [Software](#software)
   - [Services](#services)
 - [License](#license)
-- [Signature](#signature)
 
 <!-- /MarkdownTOC -->
 
@@ -124,19 +120,11 @@ Then install brew by typing this into a Terminal window:
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-and press `return`. Enter your password if prompted. 
-
 ### gpg
 
-**If you have brew installed** type this into a Terminal window and press `return`
-
-```bash
-brew install gpg
-```
-
-**If you don't have brew installed** 
-
 [GPGTools](https://gpgtools.org/) offers a convenient download that installs everything you need. 
+
+Attention `homebrew` users! `brew install gpg` installs an old "portable" version of gpg (1.4.18), while GPGTools installs the latest stable version (2.0.26) 
 
 ### TorBrowser
 
@@ -423,17 +411,3 @@ Note that it got the country wrong, and the location detail it could pull out wa
 # License 
 
 Public Domain. 
-
-# Signature 
-
------BEGIN PGP SIGNATURE-----
-Comment: GPGTools - https://gpgtools.org
-
-iQEcBAEBCgAGBQJUzkzMAAoJEIyctpjRk0YE60UH/3Oa7j7oKbtOmi6XGe1pOudk
-ioH/rxm5ozAMIv11uwJym0vwIiDctyp+pXM1bnujwGc2vleG+FXl12j0+CaREwk3
-vCjhH22WPgkvvbqFOod4LZs2twUUHAr7AUWIQCW45mc2Gydf6qpTx6SYlQupsYXU
-Z7bgiWbi8hGe0PHz85stvO4+nKgKWpIMDxK+u6Y39SVvj9pIrcz639gfhd/jv1/Z
-H+agIZLtjQuGUJHCuV6HGCPKJjJuNcU3U5cSCRvOBPNX9zegWZPVDXaY5aM32SB7
-O5XhFIB07QjrYL2Sx/8K6/RxK7iIqsAWBCNfH0TWMRc+N4lM5uYAbtGrLYYkRxE=
-=0HQL
------END PGP SIGNATURE-----
