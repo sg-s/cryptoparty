@@ -39,7 +39,7 @@
   - [Videos](#videos)
   - [Key Essays](#key-essays)
   - [Books](#books)
-- [Links](#links)
+  - [Links](#links)
   - [Software](#software)
   - [Services](#services)
 - [License](#license)
@@ -76,7 +76,7 @@ The *most* secure. Non-free software doesn't allow independent, free audits, mea
 
 1. **Laws change, but surveillance data is immortal.** For example, you may agree to cameras in every home to prevent domestic violence ("and domestic violence only") - but the next day, a new political force in power could decide that homosexuality will again be illegal, and they will use the existing home cameras to enforce their new rules. Any surveillance must be regarded in terms of how it can be abused by a worse power than today's.
 2. **Laws must be broken for society to change.** Less than a human lifetime ago, if you were born a homosexual, you were criminal from birth in the US. If today’s surveillance level had existed in the 1950s and 60s, the lobby groups for sexual equality could never have formed; it would have been just a matter of rounding up the organized criminals ("and who could possibly object to fighting organized crime?"). If today's surveillance level had existed in the 1950s and 60s, homosexuality would still be illegal and homosexual people would be criminals by birth. 
-3. **Privacy is a [fundamental](http://www.un.org/en/documents/udhr/) human right.** Privacy is a basic human need: Implying that only the dishonest people have need of any privacy ignores a basic property of the human psyche, and sends a creepy message of strong discomfort. We have a fundamental need for privacy. I lock the door when I go to the men’s room, despite the fact that nothing secret happens in there
+3. **Privacy is a [fundamental](http://www.un.org/en/documents/udhr/) human right.** Privacy is a basic human need: Implying that only the dishonest people have need of any privacy ignores a basic property of the human psyche, and sends a creepy message of strong discomfort. We have a fundamental need for privacy. I lock the door when I go to the men’s room, despite the fact that nothing secret happens in there. 
 4. **Surveillance is a one-way street that reinforces power.** Mass surveillance maintains and concentrates power; those who surveil are often those who declare themselves beyond public accountability.
 
 # Facts about the Mass Surveillance 
@@ -124,7 +124,17 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 
 [GPGTools](https://gpgtools.org/) offers a convenient download that installs everything you need. 
 
-Attention `homebrew` users! `brew install gpg` installs an old "portable" version of gpg (1.4.18), while GPGTools installs the latest stable version (2.0.26) 
+Attention `homebrew` users! `brew install gpg` installs an old "portable" version of gpg (1.4.18), while GPGTools installs the latest stable version (2.0.26). To install the latest stable version, use:
+
+```bash
+brew install gnupg2
+```
+
+or if you want the *really* modern version with ECC, use:
+
+```bash
+brew install homebrew/versions/gnupg21
+```
 
 ### TorBrowser
 
@@ -171,7 +181,7 @@ gpg --gen-key
   
 You will see something like this:
 
-```bash
+```
 gpg (GnuPG) 1.4.18; Copyright (C) 2014 Free Software Foundation, Inc.
 This is free software: you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.
@@ -305,6 +315,12 @@ gpg --import doge.asc
 
 ### Decrypt a message from a friend
 
+If a message from a friend is in `secret.txt`, decrypt it using:
+
+```bash
+gpg -d secret.txt
+```
+
 ### Sign a document 
 
 There are two ways to sign a document: first, to wrap the document in a cryptographic signature, which necessarily modifies the document, or to create the signature in a separate file, using what is called a detached signature. Here, we will perform the first method, called a `clearsign`.
@@ -363,8 +379,9 @@ Note that it got the country wrong, and the location detail it could pull out wa
 
 ## Videos
 
+* [Citizenfour](https://en.wikipedia.org/wiki/Citizenfour) Laura Poitras' award winning documentary on Edward Snowden. This is free to watch and download on the [Internet Archive](https://archive.org/details/LauraPoitrasCitizenfour).
 * [Selma](http://www.imdb.com/title/tt1020072/). *Selma* is really a movie about surveillance. MLK was the target of an [intensive surveillance campaign](http://en.wikipedia.org/wiki/Mass_surveillance_in_the_United_States#cite_note-Church-23) by the FBI to "neutralize" him as an effective civil rights activist. A FBI memo recognized King to be the "most dangerous and effective Negro leader in the country.", and the agency wanted to discredit him by collecting evidence to (unsuccessfully) prove that he had been influenced by [communism](http://edition.cnn.com/2008/US/03/31/mlk.fbi.conspiracy/).
-* [GPG For Journalists].(http://vimeo.com/56881481) Interesting for its historic significance, this video was made by Edward Snowden in a (futile) attempt to get a [journalist](https://firstlook.org/theintercept/staff/glenn-greenwald/) to use GPG. More than anything, this illustrates the complexity of security software and its resultant [inaccessibility](https://media.ccc.de/browse/congress/2014/31c3_-_6021_-_en_-_saal_g_-_201412281130_-_why_is_gpg_damn_near_unusable_-_arne_padmos.html). 
+* [GPG For Journalists](http://vimeo.com/56881481) Interesting for its historic significance, this video was made by Edward Snowden in a (futile) attempt to get a [journalist](https://firstlook.org/theintercept/staff/glenn-greenwald/) to use GPG. More than anything, this illustrates the complexity of security software and its resultant [inaccessibility](https://media.ccc.de/browse/congress/2014/31c3_-_6021_-_en_-_saal_g_-_201412281130_-_why_is_gpg_damn_near_unusable_-_arne_padmos.html). 
 * [Free software, free society: Richard Stallman at TEDxGeneva 2014](https://www.youtube.com/watch?v=Ag1AKIl_2GM). Richard Stallman talking about free software and why it matters. A good introduction to the Free Software Movement. 
 * [Bruce Schneier in conversation with Edward Snowden](https://www.youtube.com/watch?v=7Ui3tLbzIgQ).
 
@@ -377,7 +394,7 @@ Note that it got the country wrong, and the location detail it could pull out wa
 * [Guerilla Open Access Manifesto ](https://archive.org/stream/GuerillaOpenAccessManifesto/Goamjuly2008_djvu.txt)
 * [Who Should Own the Internet](http://www.nytimes.com/2014/12/04/opinion/julian-assange-on-living-in-a-surveillance-society.html)
 * [Debunking the dangerous nothing to hide nothing to fear](http://falkvinge.net/2012/07/19/debunking-the-dangerous-nothing-to-hide-nothing-to-fear/)
-* [Ed Snowden Taught Me To Smuggle Secrets Past Incredible Danger. Now I Teach You](https://firstlook.org/theintercept/2014/10/28/smuggling-snowden-secrets/) A fascinating first-hand account by Micah Lee on how he helped people communicate securely. 
+* [Ed Snowden Taught Me To Smuggle Secrets Past Incredible Danger. Now I Teach You](https://firstlook.org/theintercept/2014/10/28/smuggling-snowden-secrets/) A fascinating first-hand account by Micah Lee on how he helped journalists communicate securely. 
 
 ## Books
 
@@ -387,7 +404,7 @@ Note that it got the country wrong, and the location detail it could pull out wa
 * [This Machine Kills Secrets](http://www.thismachinekillssecrets.com/)
 * [The Traveller](https://en.wikipedia.org/wiki/The_Traveler_%28novel%29) This fictional book's major theme living within a [Panopticon](https://en.wikipedia.org/wiki/Panopticon), or a world of universal surveillance. 
 
-# Links
+## Links
 * [The EFF's PanoptiClick](https://panopticlick.eff.org/)
 * [Prism Break](https://prism-break.org/en/) A database of software and services you can switch to to maximise the cost of spying on you.
 * [Blender](https://addons.mozilla.org/en-us/firefox/addon/blender-1/) Firefox plugin that spoofs common browser configurations.  

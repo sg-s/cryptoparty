@@ -1,45 +1,25 @@
+# cryptoparty
+
+![](assets/banner2.png)
+
+First things first: you will need to install two things for this cryptoparty.
+
+
 # Installation Instructions 
 
 This sections shows you how to install [gpg](https://www.gnupg.org/), which allows you to encrypt messages, and the [TorBrowser](https://www.torproject.org/), which anonymises your communication. 
 
 ## Mac OS X
 
-**required** We'll use the Terminal a lot, so keep it in your Dock. Open the Terminal by typing `Cmd` + `space` and typing `Terminal` and hit `return`. Right-click and choose "Keep in Dock" as shown below. 
+We'll use the Terminal a lot, so keep it in your Dock. Open the Terminal by typing `Cmd` + `space` and typing `Terminal` and hit `return`. Right-click and choose "Keep in Dock" as shown below. 
 
 ![](assets/terminal-dock.png)
 
-**optional** Things are much easier if you have the fantastic [homebrew](http://brew.sh) package manger installed. To install homebrew, you need to first install [XCode](https://developer.apple.com/xcode/downloads/). 
-
-Then install brew by typing this into a Terminal window:
-
-```bash
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```
-
-and press `return`. Enter your password if prompted. 
-
 ### gpg
-
-**If you have brew installed** type this into a Terminal window and press `return`
-
-```bash
-brew install gpg
-```
-
-**If you don't have brew installed** 
 
 [GPGTools](https://gpgtools.org/) offers a convenient download that installs everything you need. 
 
 ### TorBrowser
-
-**If you have brew installed** type this into a Terminal window and press `return`
-
-```bash
-brew install caskroom/cask/brew-cask
-brew cask install tor-browser
-```
-
-**If you don't have brew installed** 
 
 Download it directly from [here](https://www.torproject.org/projects/torbrowser.html.en).
 

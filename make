@@ -6,10 +6,6 @@ perl -pi -e 's/Octodown Preview/cryptoparty/g' index.html
 perl -pi -e 's/https:\/\/raw.githubusercontent.com\/ianks\/octodown\/master\/assets\/favicon.png/assets\/favicon.ico/g' index.html
 perl -pi -e 's/image\/png/image\/ico/g' index.html
 
-# fix image widths
-# perl -pi -e 's/max-width:100%/max-width:75%/g' index.html
-# perl -pi -e 's/code.png" alt="" style="max-width:75%/code.png" alt="" style="max-width:100%/g' index.html
-# perl -pi -e 's/banner.png" alt="" style="max-width:75%/banner.png" alt="" style="max-width:100%/g' index.html
 
 # add breaks before sections
 perl -pi -e 's/<h1>/<br><h1>/g' index.html
