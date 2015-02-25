@@ -877,9 +877,36 @@ body .markdown-body
 
 <p><a href="./assets/banner2.png" target="_blank"><img src="./assets/banner2.png" alt="" style="max-width:100%;"></a></p>
 
-<p>First things first: you will need to install two things for this cryptoparty.</p>
+<br><h1>What?</h1>
 
-<br><h1>Installation Instructions</h1>
+<p>According to <a href="https://en.wikipedia.org/wiki/Cryptoparty">Wikipedia</a>,</p>
+
+<blockquote>
+<p>A CryptoParty is a grassroots global endeavour to introduce the basics of practical cryptography such as the Tor anonymity network, key signing parties, disk encryption and virtual private networks to the general public. The project primarily consists of a series of free public workshops.</p>
+</blockquote>
+
+<h3>Why should I go to a cryptoparty?</h3>
+
+<ul>
+<li>because it's fun</li>
+<li>to learn about the reality and dangers of mass surveillance </li>
+<li>to learn some really cool mathematical concepts</li>
+<li>to learn how to use free software to protect your freedom</li>
+</ul>
+
+<br><h1>Where?</h1>
+
+<p>At the <a href="http://ceid.yale.edu/">CEID</a>.</p>
+
+<br><h1>When?</h1>
+
+<p>Wednesday March 4th, 6PM</p>
+
+<br><h1>Signup</h1>
+
+<p>Will open soon, <a href="https://classesv2.yale.edu/portal/site/da1d2f4d-8e69-4193-b6ef-5a60987b5e4f">here</a></p>
+
+<br><h1>Prerequisites</h1>
 
 <p>This sections shows you how to install <a href="https://www.gnupg.org/">gpg</a>, which allows you to encrypt messages, and the <a href="https://www.torproject.org/">TorBrowser</a>, which anonymises your communication. </p>
 
@@ -916,189 +943,6 @@ body .markdown-body
 <h3>TorBrowser</h3>
 
 <p>Download and install the TorBrowser <a href="https://www.torproject.org/projects/torbrowser.html.en#windows">here</a>.</p>
-
-<br><h1>How to Use Stuff</h1>
-
-<h2>gpg</h2>
-
-<h3>Make a key</h3>
-
-<p>The first thing you want to do is to make a key. Open <code>Terminal</code> and type</p>
-
-<div class="highlight highlight-bash"><pre>gpg --gen-key
-</pre></div>
-
-<p>You will see something like this:</p>
-
-<div class="highlight highlight-bash"><pre>gpg <span class="o">(</span>GnuPG<span class="o">)</span> 1.4.18<span class="p">;</span> Copyright <span class="o">(</span>C<span class="o">)</span> <span class="m">2014</span> Free Software Foundation, Inc.
-This is free software: you are free to change and redistribute it.
-There is NO WARRANTY, to the extent permitted by law.
-
-Please <span class="k">select</span> what kind of key you want:
-   <span class="o">(</span>1<span class="o">)</span> RSA and RSA <span class="o">(</span>default<span class="o">)</span>
-   <span class="o">(</span>2<span class="o">)</span> DSA and Elgamal
-   <span class="o">(</span>3<span class="o">)</span> DSA <span class="o">(</span>sign only<span class="o">)</span>
-   <span class="o">(</span>4<span class="o">)</span> RSA <span class="o">(</span>sign only<span class="o">)</span>
-Your selection?
-</pre></div>
-
-<p>Press <code>1</code> and <code>return</code></p>
-
-<p>You will then see this:</p>
-
-<div class="highlight highlight-bash"><pre>RSA keys may be between <span class="m">1024</span> and <span class="m">4096</span> bits long.
-What keysize <span class="k">do</span> you want? <span class="o">(</span>2048<span class="o">)</span>
-</pre></div>
-
-<p>Type <code>4096</code> (we want keys to be as hard to break as possible) and type <code>return</code>. The next prompt will be:</p>
-
-<div class="highlight highlight-bash"><pre>Requested keysize is <span class="m">4096</span> bits       
-Please specify how long the key should be valid.
-         <span class="nv">0</span> <span class="o">=</span> key does not expire
-      &lt;n&gt;  <span class="o">=</span> key expires in n days
-      &lt;n&gt;w <span class="o">=</span> key expires in n weeks
-      &lt;n&gt;m <span class="o">=</span> key expires in n months
-      &lt;n&gt;y <span class="o">=</span> key expires in n years
-Key is valid <span class="k">for</span>? <span class="o">(</span>0<span class="o">)</span> 
-</pre></div>
-
-<p>Type <code>0</code> (because we don't want our keys to expire) and press <code>return</code></p>
-
-<div class="highlight highlight-bash"><pre>Key does not expire at all
-Is this correct? <span class="o">(</span>y/N<span class="o">)</span>
-</pre></div>
-
-<p>Type <code>y</code> and then <code>return</code>. Follow the final steps through:</p>
-
-<div class="highlight highlight-bash"><pre>You need a user ID to identify your key<span class="p">;</span> the software constructs the user ID
-from the Real Name, Comment and Email Address in this form:
-    <span class="s2">"Heinrich Heine (Der Dichter) &lt;heinrichh@duesseldorf.de&gt;"</span>
-
-Real name: Moo Cow
-Email address: moo@cow.com
-Comment:                  
-You selected this USER-ID:
-    <span class="s2">"Moo Cow &lt;moo@cow.com&gt;"</span>
-
-Change <span class="o">(</span>N<span class="o">)</span>ame, <span class="o">(</span>C<span class="o">)</span>omment, <span class="o">(</span>E<span class="o">)</span>mail or <span class="o">(</span>O<span class="o">)</span>kay/<span class="o">(</span>Q<span class="o">)</span>uit? 
-</pre></div>
-
-<p>Press <code>O</code> for OK, then press <code>return</code></p>
-
-<div class="highlight highlight-bash"><pre>You need a Passphrase to protect your secret key.    
-
-We need to generate a lot of random bytes. It is a good idea to perform
-some other action <span class="o">(</span><span class="nb">type </span>on the keyboard, move the mouse, utilize the
-disks<span class="o">)</span> during the prime generation<span class="p">;</span> this gives the random number
-generator a better chance to gain enough entropy.
-.............+++++
-....+++++
-</pre></div>
-
-<p>Finally, when everything is done, you'll see something like this:</p>
-
-<div class="highlight highlight-bash"><pre>gpg: /Users/moocow/.gnupg/trustdb.gpg: trustdb created
-gpg: key E6A0F631 marked as ultimately trusted
-public and secret key created and signed.
-
-gpg: checking the trustdb
-gpg: <span class="m">3</span> marginal<span class="o">(</span>s<span class="o">)</span> needed, <span class="m">1</span> <span class="nb">complete</span><span class="o">(</span>s<span class="o">)</span> needed, PGP trust model
-gpg: depth: <span class="m">0</span>  valid:   <span class="m">1</span>  signed:   <span class="m">0</span>  trust: 0-, 0q, 0n, 0m, 0f, 1u
-pub   4096R/E6A0F631 2015-02-01
-      Key <span class="nv">fingerprint</span> <span class="o">=</span> 9DA8 <span class="m">5002</span> A98E <span class="m">7217</span> <span class="m">8780</span>  5FEF 6D61 F3FA E6A0 F631
-uid                  Moo Cow &lt;moo@cow.com&gt;
-sub   4096R/E4EFD8D3 2015-02-01
-</pre></div>
-
-<p>Excellent! We have now made a key that we can both to encrypt messages to other people (the private key), and that we can hand out to other people to encrypt messages to us (the public key).</p>
-
-<h3>Export and publish your <strong>public</strong> key</h3>
-
-<p>First, ask <code>gpg</code> to show you what public keys you have using</p>
-
-<div class="highlight highlight-bash"><pre>gpg -k
-
-/Users/moocow/.gnupg/pubring.gpg
-- --------------------------------
-pub   4096R/E6A0F631 2015-02-01
-uid                  Moo Cow &lt;moo@cow.com&gt;
-sub   4096R/E4EFD8D3 2015-02-01
-</pre></div>
-
-<p>And export the key you want using</p>
-
-<div class="highlight highlight-bash"><pre>gpg --armor --export moo@cow.com &gt; moo.txt
-</pre></div>
-
-<p>The public key will be saved in a file called <code>moo.txt</code>. You should now distribute this key widely, for example, by uploading it to the <a href="http://pgp.mit.edu/">MIT key server</a>.</p>
-
-<h3>Verify and import friend's key</h3>
-
-<p>After downloading a friend's key (say it's in a file called <code>doge.asc</code>), navigate to that folder and type:</p>
-
-<div class="highlight highlight-bash"><pre>gpg --with-fingerprint doge.asc
-</pre></div>
-
-<p>Verify that this fingerprint is correct by talking to your friend (or relying on a non-electronic channel of communication). If it's correct, import is using</p>
-
-<div class="highlight highlight-bash"><pre>gpg --import doge.asc
-</pre></div>
-
-<h3>Sign your friend's key</h3>
-
-<h3>Encrypt a message to a friend</h3>
-
-<h3>Decrypt a message from a friend</h3>
-
-<h3>Sign a document</h3>
-
-<p>There are two ways to sign a document: first, to wrap the document in a cryptographic signature, which necessarily modifies the document, or to create the signature in a separate file, using what is called a detached signature. Here, we will perform the first method, called a <code>clearsign</code>.</p>
-
-<p>You will notice that this document is clear-signed with my private key. </p>
-
-<p>If you want to sign a plain-text document called <code>cowsay.txt</code>, do so with </p>
-
-<div class="highlight highlight-bash"><pre>gpg --clearsign cowsay.txt
-</pre></div>
-
-<p><code>gpg</code> will create a file called <code>cowsay.txt.asc</code> with the signature. You can rename and change the extension to whatever you want. </p>
-
-<h3>Verify a signed document</h3>
-
-<p>Assuming you have a clearsigned document in <code>doge.txt.asc</code>, that has been signed by your friend, and you have his public key, you can verify that this document is legitimate using</p>
-
-<div class="highlight highlight-bash"><pre>gpg --verify doge.txt.asc
-</pre></div>
-
-<p>and if you see something like:</p>
-
-<div class="highlight highlight-bash"><pre>gpg: Signature made Sun Feb  <span class="m">1</span> 11:04:39 <span class="m">2015</span> EST using RSA key ID DOGE9999
-gpg: Good signature from <span class="s2">"The Doge &lt;wow@doge.dog&gt;"</span> <span class="o">[</span>unknown<span class="o">]</span>
-</pre></div>
-
-<p>it means the signature and document are authentic. If on the other hand, you see something like this:</p>
-
-<div class="highlight highlight-bash"><pre>gpg: Signature made Sun Feb  <span class="m">1</span> 11:09:26 <span class="m">2015</span> EST using RSA key ID DOGE9999
-gpg: BAD signature from <span class="s2">"The Doge &lt;wow@doge.dog&gt;"</span> <span class="o">[</span>unknown<span class="o">]</span>
-</pre></div>
-
-<p>this means the document has been tampered with by a nefarious party. </p>
-
-<h2>tor</h2>
-
-<p>Tor allows you to anonymise your activity on the internet. This means that if you visit a website, that website doesn't know where you're coming from. Without Tor, websites we visit know (among other things) where you live. Go to <code>http://smart-ip.net/geoip</code>  to see where that website thinks you live.</p>
-
-<p><a href="./assets/without-tor.png" target="_blank"><img src="./assets/without-tor.png" alt="" style="max-width:100%;"></a></p>
-
-<p>It seems to have a pretty good idea! Now, fire up <code>TorBrowser</code>. If everything is configured correctly, you should see this:</p>
-
-<p><a href="./assets/tor-browser.png" target="_blank"><img src="./assets/tor-browser.png" alt="" style="max-width:100%;"></a></p>
-
-<p>Now, if we visit <code>http://smart-ip.net/geoip</code> again, we see something else (your location will vary, as the Tor network will route you through a different node in the network):</p>
-
-<p><a href="./assets/with-tor.png" target="_blank"><img src="./assets/with-tor.png" alt="" style="max-width:100%;"></a></p>
-
-<p>Note that it got the country wrong, and the location detail it could pull out wasn't more specific than a whole country. </p>
     </article>
   </body>
 </html>
