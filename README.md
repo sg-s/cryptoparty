@@ -27,10 +27,6 @@ Wednesday March 4th, 6PM
 
 [Here](https://classesv2.yale.edu/portal/site/da1d2f4d-8e69-4193-b6ef-5a60987b5e4f)
 
-# Prerequisites 
-
-This sections shows you how to install [gpg](https://www.gnupg.org/), which allows you to encrypt messages, and the [TorBrowser](https://www.torproject.org/), which anonymises your communication. 
-
 # FAQ
 
 ### What is free software? 
