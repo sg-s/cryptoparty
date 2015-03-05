@@ -15,19 +15,11 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Cryptoparty),
 * to learn some really cool mathematical concepts
 * to learn how to use free software to protect your freedom
 
-# Where?
-
-At the [CEID](http://ceid.yale.edu/).
-
-# When?
-
-Wednesday March 4th, 6PM
-
-# Signup
-
-[Here](https://classesv2.yale.edu/portal/site/da1d2f4d-8e69-4193-b6ef-5a60987b5e4f)
-
 # FAQ
+
+### Where can I get slides and other material?
+
+[Here](https://github.com/sg-s/cryptoparty/releases/)
 
 ### What is free software? 
 
