@@ -23,7 +23,7 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Cryptoparty),
 
 ### What is free software? 
 
-[Free software](http://www.fsf.org/about/what-is-free-software) is software that gives you, the user, the freedom to share, study and modify it. Free software is necessary for computer security: *only* with free software can security be based not on blind trust, but on verifiable facts. 
+[Free software](http://www.fsf.org/about/what-is-free-software) is software that gives you, the user, the freedom to share, study and modify it. Free software is necessary for computer security: *only* with free software can security be based not on blind trust, but on verifiable facts. If you can't verify, you can't trust. 
 
 We use the word "free" here as in "freedom", not as in "free beer". 
 
@@ -35,8 +35,13 @@ The *most* secure. Non-free software doesn't allow independent, free audits, mea
 
 1. **Laws change, but surveillance data is immortal.** For example, you may agree to cameras in every home to prevent domestic violence ("and domestic violence only") - but the next day, a new political force in power could decide that homosexuality will again be illegal, and they will use the existing home cameras to enforce their new rules. Any surveillance must be regarded in terms of how it can be abused by a worse power than today's.
 2. **Laws must be broken for society to change.** Less than a human lifetime ago, if you were born a homosexual, you were criminal from birth in the US. If today's surveillance level had existed in the 1950s and 60s, the lobby groups for sexual equality could never have formed; it would have been just a matter of rounding up the organized criminals ("and who could possibly object to fighting organized crime?"). If today's surveillance level had existed in the 1950s and 60s, homosexuality would still be illegal and homosexual people would be criminals by birth. 
-3. **Privacy is a [fundamental](http://www.un.org/en/documents/udhr/) human right.** Privacy is a basic human need: Implying that only the dishonest people have need of any privacy ignores a basic property of the human psyche, and sends a creepy message of strong discomfort. We have a fundamental need for privacy. I lock the door when I go to the men's room, despite the fact that nothing secret happens in there. 
-4. **Surveillance is a one-way street that reinforces power.** Mass surveillance maintains and concentrates power; those who surveil are often those who declare themselves beyond public accountability.
+3. **Privacy is a [fundamental](http://www.un.org/en/documents/udhr/) human right.** Privacy is a basic human need: Implying that only the dishonest people have need of any privacy ignores a basic property of the human psyche, and sends a creepy message of strong discomfort. We have a fundamental need for privacy. I lock the door when I go to the men's room, despite the fact that nothing secret happens in there. Saying that you have nothing to hide and therefore don't care about privacy is just as bad as saying that because you don't read the newspaper, you don't care about freedom of speech. 
+4. **Surveillance is a one-way street that reinforces power.** Mass surveillance maintains and concentrates power; those who surveil are often those who declare themselves beyond public accountability. As Tony Benn and Yanis Varoufakis pointed out, you know you are not living a democratic system when people in power refuse to tell you what powers they have, and what you can do to take those powers away from them. 
+
+### What can I do?
+
+1. Organise, organise, organise. 
+2. **Leverage technology**. The rest of this document is meant to inform you about the tools you can use to protect yourself from malicious actors. 
 
 # Installation Instructions 
 
@@ -356,6 +361,9 @@ Note that it got the country wrong, and the location detail it could pull out wa
 * [Free software, free society: Richard Stallman at TEDxGeneva 2014](https://www.youtube.com/watch?v=Ag1AKIl_2GM). Richard Stallman talking about free software and why it matters. A good introduction to the Free Software Movement. 
 * [Bruce Schneier in conversation with Edward Snowden](https://www.youtube.com/watch?v=7Ui3tLbzIgQ).
 
+## Tutorials
+
+* [My tutorial on configuring and using your own server](https://github.com/sg-s/macbook-server)
 
 
 ## Key Essays
@@ -392,9 +400,7 @@ Note that it got the country wrong, and the location detail it could pull out wa
 
 ## Services
 
-* [disconnect.me](https://disconnect.me/) A search engine that claims to respect your privacy.
-* [DuckDuckGo](https://duckduckgo.com/) Another search engine that claims to respect your privacy.
-* [BitTorrent Sync](http://www.getsync.com/) An alternative to Dropbox that uses the P2P BitTrorrent technology to synchronise computers. The actual app is closed source. 
+* [DuckDuckGo](https://duckduckgo.com/) A search engine that claims to respect your privacy.
 
 # License 
 
