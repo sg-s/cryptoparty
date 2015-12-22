@@ -91,9 +91,9 @@ brew cask install tor-browser
 Download it directly from [here](https://www.torproject.org/projects/torbrowser.html.en).
 
 
-## Linux
+## GNU/Linux
 
-If you're using Linux, etc., I assume you know what you're doing. Please install:
+If you're using GNU/Linux, GNU/Hurd, etc., I assume you know what you're doing. Please install:
 
 * [gpg](https://www.gnupg.org/)
 * [TorBrowser](https://www.torproject.org/). 
