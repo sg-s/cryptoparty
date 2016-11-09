@@ -17,6 +17,18 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Cryptoparty),
 
 # FAQ
 
+### Why should I care? Nothing bad is going to happen to me. 
+
+> First they came for the Socialists, and I did not speak out — 
+> Because I was not a Socialist.
+> Then they came for the Trade Unionists, and I did not speak out— 
+> Because I was not a Trade Unionist.
+> Then they came for the Jews, and I did not speak out—
+> Because I was not a Jew.
+> [Then they came for me—and there was no one left to speak for me.](https://en.wikipedia.org/wiki/United_States_presidential_election,_2016)
+
+-- [Martin Neimöller](https://en.wikipedia.org/wiki/First_they_came_...), about the Nazi's rise to power. 
+
 ### Where can I get slides and other material?
 
 [Here](https://github.com/sg-s/cryptoparty/releases/)
@@ -393,7 +405,7 @@ Note that it got the country wrong, and the location detail it could pull out wa
 
 ## Software
 
-* [OTR](https://otr.cypherpunks.ca/). OTR, or Off-the-record allows you to encrypt instant messaging 
+* [Signal](https://whispersystems.org/) Signal is an easy to use, end-to-end encrypted messaging system for your phone. Don't use WhatsApp or facebook messenger!
 * [TAILS](https://tails.boum.org/). Tails is a hardened live operating system that routes everything over Tor and allows no local changes. 
 * [Firefox](https://www.mozilla.org/en-US/firefox/new/). The most widely used free browser. 
 * [HTTPS Everywhere](https://www.eff.org/https-everywhere) A plugin made by EFF to force encrypted connections in the browser
