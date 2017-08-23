@@ -405,6 +405,7 @@ Note that it got the country wrong, and the location detail it could pull out wa
 
 ## Software
 
+* [uBlock Origin](https://github.com/gorhill/uBlock/) The best ad-blocker out there. Ads are part of the surveillance system of the web. 
 * [Signal](https://whispersystems.org/) Signal is an easy to use, end-to-end encrypted messaging system for your phone. Don't use WhatsApp or facebook messenger!
 * [TAILS](https://tails.boum.org/). Tails is a hardened live operating system that routes everything over Tor and allows no local changes. 
 * [Firefox](https://www.mozilla.org/en-US/firefox/new/). The most widely used free browser. 
