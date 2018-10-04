@@ -12,7 +12,7 @@ perl -pi -e 's/<h1>/<br><h1>/g' index.html
 
 
 # fix all relative links
-perl -pi -e 's/\/Users\/sigbhu\/code\/cryptoparty/./g' index.html
+perl -pi -e 's/\/Users\/sg-s\/code\/cryptoparty/./g' index.html
 
 # open in browser
 open "index.html"
